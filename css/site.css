@@ -31918,11 +31918,11 @@ code {
 }
 
 .top {
-  background: #7289da;
-  background-image: "boxes.png";
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50%;
+    background: #409f90;
+    background-image: "boxes.png";
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
 }
 
 .main-page {
@@ -31977,7 +31977,7 @@ code {
 }
 
 .end-button {
-  background: #7289da;
+    background: #409f90;
 }
 
 @media (min-width: 640px) {
