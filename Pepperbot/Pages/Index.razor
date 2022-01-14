@@ -5,7 +5,7 @@
 <div class="text-center text-black main-page">
     <div class="pb-12 top">
         <div name="navigation" class="navigation">
-            <img src="Slash_Commands.svg" class="h-full rounded-full">
+            <img src="logo.svg" class="h-full rounded-full">
             <div class="nav-links text-white font-semibold">
                 <a href="@invite" target="_blank"
                    class="hover:underline cursor-pointer">Invite</a><a href="https://docs.slashr.xyz" target="_blank"
@@ -82,8 +82,10 @@ mx-auto" src="https://turtlepaw.is-from.space/r/Discord_5EpmjFvVi8.png">
                                                                 target="_blank"
                                                                 class="block bg-white text-white font-bold transition duration-200 shadow hover:shadow-2xl ease-in-and-out rounded-lg mx-auto end-button mt-5 px-2 py-4 mb-36 hover:opacity-80 text-xl font-sans w-60"> Invite Slashr</a>
     </div>
+
+    @*<Bottommenu />*@
 </div>
 
 @code {
-    public string invite { get; set; } = "https://discord.com/oauth2/authorize?client_id=859915461692096552&scope=bot%20applications.commands&permissions=2416184321";
+    public string invite { get; set; } = "/invite";
 }

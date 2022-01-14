@@ -40,7 +40,7 @@ code {
 }
 
 .top {
-    background: #409f90;
+    background: #5865F2;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
@@ -98,5 +98,12 @@ code {
 }
 
 .end-button {
-    background: #409f90
+    background: #5865F2
+}
+
+.end {
+    background: #72767d;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
 }
