@@ -1,0 +1,56 @@
+﻿@page "/privacy"
+
+@inject IJSRuntime jsRuntime
+<div class="text-center text-black main-page">
+    <div class="pb-12 top">
+        <div name="navigation" class="navigation">
+            <a href="/"><img src="logo.svg" class="h-full rounded-full"></a>
+            <div class="nav-links text-white font-semibold">
+                <a href="@invite" target="_blank"
+                   class="hover:underline cursor-pointer">Invite</a><a href="https://docs.slashr.xyz" target="_blank"
+                                                                       class="hover:underline cursor-pointer">Docs</a><a href="https://slashr.xyz/support"
+                                                                                                                         target="_blank" class="hover:underline cursor-pointer">Support</a><a href="/auth" class="hover:underline cursor-pointer">Login</a>
+            </div>
+        </div>
+        <div id="main" name="main" class="mt-10 text-white">
+            <h1 class="text-6xl font-bold align-middle">Privacy</h1>
+        </div>
+    </div>
+    <div class="feature text-center">
+        <div class="w-full sm:w-1/2 sm:p-8 feature-header">
+            <h1 class="font-bold text-5xl mb-3">Privacy</h1>
+            <h3 class="font-bold text-5xl mb-3">What information is stored?</h3>
+            <p class="font-semibold text-lg">
+                <ul>
+                    <li>When you create a Custom Slash Command your guildID, reply options (ephemeral, reply, embeds, and buttons), and command options (ID, short ID, and name) is stored.</li>
+                    <li>Your userID is stored if you are blacklisted from the bot.</li>
+                    <li>When you create Button Roles your guildID, Button Role ID, Role ID's, and Button Role message ID is stored.</li>
+                    <li>When someone uses a Custom Slash Command their ID and use is stored for server command analytics.</li>
+                    <li>When you configure your server your settings and serverID is stored.</li>
+                    <li>When you submit a Custom Command Template your code, options (title and description), and userID is stored.</li>
+                </ul>
+            </p>
+            <h3 class="font-bold text-5xl mb-3">Why we store the information and how we use it.</h3>
+            <p class="font-semibold text-lg">
+                <ul>
+                    <li>Custom Slash Command data is stored to reply, edit, and delete the command.</li>
+                    <li>For blacklisted information, this information is for the bot to know who can/cannot use commands.</li>
+                    <li>Button Role data is stored to give roles and check messages.</li>
+                    <li>Custom Slash Command analytics data is used to check unique uses. (e.g. if you used a command 2 times it would not be)</li>
+                </ul>
+            </p>
+            <h3 class="font-bold text-5xl mb-3">Who gets this data?</h3>
+            <p class="font-semibold text-lg">
+                Only bot owners and admins.
+            </p>
+            <h3 class="font-bold text-5xl mb-3">Questions and Concerns.</h3>
+            <p class="font-semibold text-lg">
+                If you have questions and/or concerns about the data stored, please <a href="https://discord.gg/4J5Bc4Zhyg" target="_blank" class="hover:underline cursor-pointer">join our support server</a> and create a ticket.
+            </p>
+        </div>
+    </div>
+</div>
+
+@code {
+    public string invite { get; set; } = "/invite";
+}
